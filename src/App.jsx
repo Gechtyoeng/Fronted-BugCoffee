@@ -8,13 +8,12 @@ import Review from './pages/review/review'
 const App = () => {
   return (
     <div>
-      <h1>hh</h1>
       <Navigation />
       <Routes>
         <Route path='/' element={<Home/>} />
-        <Route path='./Menu' element={<Menu/>} />
-        <Route path='./Review' element={<Review/>} />
-        <Route path='./Contact' element={<Contact/>} />
+        <Route path='/menu' element={<Menu/>} />
+        <Route path='/review' element={<Review/>} />
+        <Route path='/contact' element={<Contact/>} />
       </Routes>
     </div>
   )
