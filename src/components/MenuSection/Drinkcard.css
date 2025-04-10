@@ -1,0 +1,85 @@
+/* MenuSection.css */
+.menu-section {
+    padding: 2rem;
+}
+
+.menu-items {
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent line breaks */
+    padding: 2rem; /* Add some padding for better appearance */
+}
+
+.menu-items::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}    
+
+.menu-item {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin: 1rem; /* Adjust margin to fit better in horizontal scroll */
+    text-align: center;
+    width: 800px; /* Increase the width */
+    border-radius: 30px;
+    background: #FFF;
+    box-shadow: 0px 7px 10px 3px rgba(0, 0, 0, 0.25);
+    display: inline-block; /* Ensure items are inline for horizontal scroll */
+}
+
+
+
+.menu-addon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1rem;
+    font-size: xx-small;
+}
+
+.b1, .b2, .b3, .b4{
+    border-radius: 10px;
+    background-color:#eee;
+    color: black;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+    padding: 0.3rem 0.3rem;
+    margin: 0.2rem 0.2rem;
+    cursor: pointer;
+    font-size: xx-small;
+}
+
+.b2 {
+    background-color:#D4FFCC;
+}
+.b3 {
+    background-color:#FFA1A1;
+}
+.b4 {
+    background-color:#ECD6A4;
+}
+.menu-order {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem 1rem 0.5rem 1rem;
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+}
+
+.menu-item .price {
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+.menu-item button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 20px;
+}

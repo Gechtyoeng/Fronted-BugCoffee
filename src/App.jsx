@@ -15,6 +15,7 @@ const App = () => {
         <Route path='/review' element={<Review/>} />
         <Route path='/contact' element={<Contact/>} />
       </Routes>
+      <menu/>
     </div>
   )
 }
