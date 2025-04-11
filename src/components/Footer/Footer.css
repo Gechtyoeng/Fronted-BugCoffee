@@ -22,12 +22,19 @@
     margin: 6px 0;
     color: #ddd;
     text-decoration: none;
+    background: none;
+    outline: none;
+    border: none;
   }
   
-  .footer-link:hover {
+ 
+  .footer-link:hover  {
     color: #F0D6BD;
     text-decoration: underline;
     cursor: pointer;
+    background: none;
+    outline: none;
+    border: none;
   }
   
   .footer-logo {
