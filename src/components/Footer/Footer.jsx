@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import logo from "../../assets/footer_logo.png";
 import { FaFacebookF, FaTiktok, FaTelegramPlane, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import "./Footer.css";
@@ -25,7 +26,7 @@ const Footer = () => {
           <h2>Our Store</h2>
           <NavLink to="/" className="footer-link">Home</NavLink>
           <NavLink to="/menu" className="footer-link">Menu</NavLink>
-          <p className="footer-link">About Us</p>
+          <HashLink smooth to="/#about-us" className="footer-link">About Us</HashLink>
           <NavLink to="/review" className="footer-link">Review</NavLink>
           <NavLink to="/contact" className="footer-link">Contact</NavLink>
         </div>

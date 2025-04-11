@@ -27,7 +27,7 @@ const home = () => {
         </div>
       </div>
       <div className='aboutUs'>
-        <div className='aboutUs-text'>
+        <div className='aboutUs-text' id='about-us'>
           <h1>About Us</h1>
           <p className='home-description'>At Bugs Coffee, we believe that coffee is more than just a drink—it’s an experience. 
             Founded with a passion for quality, sustainability, and community, our café is a place where people come together over a great cup of coffee.</p>
