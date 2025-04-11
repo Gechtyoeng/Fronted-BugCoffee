@@ -5,6 +5,7 @@ import Home from './pages/home/home'
 import Menu from './pages/menu/menu'
 import Contact from './pages/contact/contact'
 import Review from './pages/review/review'
+import Footer from './components/Footer/Footer'
 const App = () => {
   return (
     <div>
