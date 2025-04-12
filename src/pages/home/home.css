@@ -19,6 +19,7 @@ body {
     margin: auto;
     align-items: center;
     margin-top: 82px;
+    margin-bottom: 50px;
     width: 1064px;
     height: 520px;
     flex-shrink: 0;
