@@ -21,6 +21,7 @@ const BackgroundCard = ({images}) => {
     <div className='background-big-container'>
       <div className='background-container'>
         <img src={ArrowLeft} alt="Left Arrow" className="arrow" onClick={handleLeft}/>
+        <div className='image-container'>
         <motion.img
           key={img} // Ensures re-render for animation
           src={images[img].src}
@@ -31,8 +32,16 @@ const BackgroundCard = ({images}) => {
           exit={{ opacity: 0, x: 50 }}
           transition={{ duration: 0.5 }}
         />
+        <div className={`overlay ${images[img].overlayClass}`}>
+          <p className='firstTitle'>{images[img].firstTitle}</p>
+          <h2 className='imgtitle'>{images[img].title}</h2>
+          <p className='img-text'>{images[img].description}</p>
+          {images[img].buttonText && <button className='img-button'>{images[img].buttonText}</button>}
+        </div>
+        </div>
         <img src={ArrowRight} alt={ArrowRight} className="arrow" onClick={handleRight}/>
       </div>
+      
       <div className='dot-container'>
         <div className={'dot' + (img === 0 ? ' active' : ' inactive')} onClick={() => {setImg(0)}}></div>
         <div className={'dot' + (img === 1 ? ' active' : ' inactive')} onClick={() => {setImg(1)}}></div>
